@@ -15,4 +15,5 @@ void display_prompt(void)
 			perror("write");
 			exit(EXIT_FAILURE);
 		}
+	}
 }
