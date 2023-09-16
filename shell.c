@@ -9,7 +9,6 @@ int main(void)
 	size_t n = 0;
 	int i = 0;
 	pid_t pid;
-	extern char** environ;
 
 	while (1)
 	{
@@ -31,7 +30,6 @@ int main(void)
 				{
 					break;
 				}
-
 				full_path = get_full_path_of_command(tokens[0]);
 				execve(full_path, tokens, environ);
 				perror("./shell");

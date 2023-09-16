@@ -13,6 +13,10 @@
 #include <dirent.h>
 #include <stdbool.h>
 
+
+/* Global environemnt */
+extern char **environ;
+
 size_t _strlen(const char* str);
 char* cmd_read(char* cmd, size_t n, ssize_t value);
 char* _strcpy(char* cpy, const char* orignal);
