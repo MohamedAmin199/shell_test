@@ -23,7 +23,7 @@ char *_strcpy(char *cpy, const char *orignal);
 char **split_cmd(char *cmd, size_t n);
 char *_strcat(char *dest, const char *src);
 char* get_Path(const char* command);
-int _strcmp(const char* str1, const char* str2);
+int _strcmp(const char *str1, const char *str2);
 char* find_indir(const char* command, const char* directory);
 bool isCommandExists(const char* command);
 char *_strchr(const char *str, int ch);

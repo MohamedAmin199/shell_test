@@ -7,7 +7,7 @@
  * or -1 if str1 is shorter than str2,
  * or 1 if str1 is longer than str2.
  */
-int _strcmp(const char* str1, const char* str2)
+int _strcmp(const char *str1, const char *str2)
 {
 	int i = 0;
 
