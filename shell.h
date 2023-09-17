@@ -31,7 +31,7 @@ char *get_command_directory(const char *command);
 char* change_directory_to_command(const char *command);
 char *_getenv(const char *name);
 char** get_directories_in_path();
-char* get_full_path_of_command(const char* command);
+char *get_full_path_of_command(const char *command);
 void execute_builtin(char **tokens);
 void free_tokens(char **tokens);
 int is_command_builtin(char* command);

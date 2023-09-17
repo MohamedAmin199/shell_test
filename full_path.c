@@ -5,11 +5,11 @@
  * @command: A pointer that points to a constant character.
  * Return: The full path of the command if it's found.
  */
-char* get_full_path_of_command(const char* command)
+char *get_full_path_of_command(const char *command)
 {
-	const char* path = _getenv("PATH");
-	char* path_copy = malloc(_strlen(path) + 1);
-	char* dir = strtok(path_copy, ":");
+	const char *path = _getenv("PATH");
+	char *path_copy = malloc(_strlen(path) + 1);
+	char *dir = strtok(path_copy, ":");
 
 	_strcpy(path_copy, path);
 
@@ -18,7 +18,7 @@ char* get_full_path_of_command(const char* command)
 		size_t dir_len = _strlen(dir);
 		size_t command_len = _strlen(command);
 		struct stat file_stat;
-		char* full_path = malloc(dir_len + 1 + command_len + 1);
+		char *full_path = malloc(dir_len + 1 + command_len + 1);
 
 		if (full_path == NULL)
 		{
