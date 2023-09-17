@@ -7,10 +7,10 @@
  * Return: The array of tokens.
  */
 
-char** split_cmd(char* cmd, size_t n)
+char **split_cmd(char *cmd, size_t n)
 {
-	char* line, *line_copy, *token, **tokens;
-	char* delim = " \n";
+	char *line, *line_copy, *token, **tokens;
+	char *delim = " \n";
 	ssize_t value = 0;
 	int num_tokens = 0, i = 0;
 
@@ -24,7 +24,7 @@ char** split_cmd(char* cmd, size_t n)
 		num_tokens++;
 		token = strtok(NULL, delim);
 	}
-		tokens = malloc((num_tokens + 1) * sizeof(char*));
+		tokens = malloc((num_tokens + 1) * sizeof(char *));
 		if (tokens == NULL)
 		{
 			perror("allocation error\n");
