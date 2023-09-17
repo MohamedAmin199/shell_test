@@ -8,7 +8,7 @@
  * Return: Access to the read and processed line of text.
  */
 
-char* cmd_read(char* cmd, size_t n, ssize_t value)
+char *cmd_read(char *cmd, size_t n, ssize_t value)
 {
 	cmd = NULL;
 	n = 0;
