@@ -17,6 +17,7 @@ char* get_full_path_of_command(const char* command)
 	{
 		size_t dir_len = _strlen(dir);
 		size_t command_len = _strlen(command);
+		struct stat file_stat;
 		char* full_path = malloc(dir_len + 1 + command_len + 1);
 
 		if (full_path == NULL)
@@ -28,8 +29,6 @@ char* get_full_path_of_command(const char* command)
 		_strcpy(full_path, dir);
 		_strcat(full_path, "/");
 		_strcat(full_path, command);
-
-		struct stat file_stat;
 
 		if (stat(full_path, &file_stat) == 0 && file_stat.st_mode & S_IXUSR)
 		{
