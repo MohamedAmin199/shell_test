@@ -7,9 +7,9 @@
  * Return: A pointer to the concatenated string.
  */
 
-char* _strcat(char* dest, const char* src)
+char *_strcat(char *dest, const char *src)
 {
-	char* ptr = dest;
+	char *ptr = dest;
 
 	while (*ptr)
 	{
