@@ -26,7 +26,7 @@ char* get_Path(const char* command);
 int _strcmp(const char* str1, const char* str2);
 char* find_indir(const char* command, const char* directory);
 bool isCommandExists(const char* command);
-char* _strchr(const char* str, int ch);
+char *_strchr(const char *str, int ch);
 char *get_command_directory(const char *command);
 char* change_directory_to_command(const char *command);
 char *_getenv(const char *name);

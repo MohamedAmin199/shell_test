@@ -5,15 +5,15 @@
  * @ch: The character.
  * Return: A pointer.
  */
-char* _strchr(const char* str, int ch)
+char *_strchr(const char *str, int ch)
 {
-	char* ptr = NULL;
+	char *ptr = NULL;
 
 	while (*str != '\0')
 	{
 		if (*str == ch)
 		{
-			ptr = (char*)str;
+			ptr = (char *)str;
 			break;
 		}
 		str++;
